@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Person</title>
+        <!-- font-awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <!-- css -->
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+
+    <body>
+        <div class="block black"></div>
+        <div class="block">
+          <div class="card">
+            <div class="img-container">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" alt='user image' class="user-img"></img>
+            </div>
+            <div class="user-title">
+              My name is
+            </div>
+            <div class="user-value">
+              John Doe
+            </div>
+            <div class="user-btns">
+              <!-- single icon -->
+                <button class="icon " data-label='name'>
+                  <i class="far fa-user"></i>
+                  <i class="fas fa-user selected"></i>
+                </button>
+              <!-- single icon -->
+                <button class="icon" data-label='email'>
+                  <i class="far fa-envelope-open"></i>
+                  <i class="fas fa-envelope-open selected"></i>
+                </button>
+              <!-- single icon -->
+                <button class="icon" data-label='age'>
+                  <i class="far fa-calendar-times"></i>
+                  <i class="fas fa-calendar-times selected"></i>
+                </button>
+              <!-- single icon -->
+                <button class="icon" data-label='address'>
+                  <i class="far fa-map"></i>
+                  <i class="fas fa-map selected"></i>
+                </button>
+              <!-- single icon -->
+                <button class="icon" data-label='phone'>
+                  <i class="fas fa-mobile-alt"></i>
+                  <i class="fas fa-mobile selected"></i>
+                </button>
+              <!-- single icon -->
+                <button class="icon" data-label='password'>
+                  <i class="fas fa-lock"></i>
+                  <i class="fas fa-unlock-alt selected"></i>
+                </button>
+            </div>
+            <button class="btn random-btn">Randome user</button>
+          </div>
+        </div>
+        <script type="module" src="./app.js"></script>
+        </html>
+    </body>
